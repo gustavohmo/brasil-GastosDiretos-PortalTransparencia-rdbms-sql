@@ -60,7 +60,7 @@ CREATE TABLE `banco`.`aux_programa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `banco`.`aux_acao` (
-  `cod_acao` int(4) DEFAULT NULL,
+  `cod_acao` varchar(4) DEFAULT NULL,
   `nome_acao` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`cod_acao`),
   KEY `acao_covering_index` (`cod_acao`,`nome_acao`)
